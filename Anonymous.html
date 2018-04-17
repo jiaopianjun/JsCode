@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=750,minimum-scale=0.2,maximum-scale=2,user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+    <link rel="stylesheet" href="http://cc.jiaopianjun.cc/web/common/css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="http://cc.jiaopianjun.cc/web/common/js/jquery-1.10.2.min.js" charset="utf-8"></script>
+    <script src="http://cc.jiaopianjun.cc/web/common/js/mobile-detect.min.js"></script>
+    <script src="http://cc.jiaopianjun.cc/web/common/js/api.js"></script>
+    <script src="http://cc.jiaopianjun.cc/web/common/js/vue.js"></script>
+</head>
+<body>
+    <div class="index clearfix">
+      <div class="banner">
+         <div class="defaultAddress">{{city}}</div>
+         <div class="changeAddress" @click="cAddress">更改</div>
+      </div>
+      <div class="Wserch" v-if="serchInput">
+        <input type="text" class="WserchInput" placeholder="请输入您要搜索的地方" />
+        <div class="WserchBtn" @click="go">Go</div>
+        <div class="errts" v-if="errts">{{errtsText}}</div>
+      </div>
+      <div class="list" v-if="!msg">   <!-- 默认展示 -->
+        <div class="li" v-for="(list , temp) in moreList">
+          <div class="onDate">{{list.date}}</div>
+          <div class="libox clearfix">
+            <div class="liboxLeft">
+              <p>High： {{list.high}}</p>
+              <p>Low ： {{list.low}} </p>
+              <p>日 出： {{list.sunrise}}</p>
+              <p>日 落： {{list.sunset}}</p>
+              <p>风 向： {{list.fx}}{{list.fl}}</p>
+            </div>
+            <div class="liboxRight">
+              <div class="RealTime">
+                 <p class="type">{{list.type}}</p>
+                 <p class="wd">{{temp == 0 ? onlist.wendu + '℃' : ''}}</p>
+                 <div class="Rnotice">
+                    <p><span>{{list.notice}}</span><span>{{list.notice}}</span></p>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="aqi" v-if="temp === 0">
+            <p>Aqi：{{list.aqi}}</p>
+            <p>湿度：{{onlist.shidu}}</p>
+            <p>空气质量：{{onlist.quality}}</p>
+          </div>
+          <div class="wxts" v-if="temp === 0">温馨提示：{{onlist.ganmao}}</div>
+        </div>
+      </div>
+      <div class="msg" v-if="msg">
+         当前位置获取失败，请手动选择
+      </div>
+      <div class="loading" v-if="loading"></div>
+    </div>
+    <script src="js/index.js" charset="utf-8"></script>
+    <script src="http://api.map.baidu.com/api?ak=5a34f5ed633e9015dda8f3d7ec554b40&v=2.0&services=false"></script>
+</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

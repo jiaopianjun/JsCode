@@ -1,0 +1,173 @@
+.index{
+	width:750px;
+	height: auto;
+	margin:0 auto;
+	background: #fff;
+	padding-bottom: 25px;
+}
+.index .banner{
+	height: 50px;
+	line-height: 50px;
+	padding:25px;
+}
+.banner .defaultAddress{
+    float: left;
+    padding-left: 45px;
+    font-family: "Microsoft YaHei";
+    font-size: 25px;
+    background: url(../images/location.png) no-repeat left center;
+    min-width: 50px;
+    height: 44px;
+}
+.banner .changeAddress{
+	float: right;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	background: #000;
+	color:#fff;
+	font-family: "Microsoft YaHei";
+	font-size: 20px;
+	cursor: pointer;
+}
+.Wserch{
+	position: relative;
+	width: 92%;
+	height: 80px;
+	border:3px solid #000;
+	margin:0 auto;
+	border-radius: 23px;
+	background:url(../images/ss.png) no-repeat 20px center;
+	background-size: 32px ;
+	margin-bottom: 70px;
+}
+.Wserch input{
+    width: 60%;
+    height: 73px;
+    border: none;
+    margin-left: 80px;
+    font-family: "Microsoft YaHei";
+    font-size: 25px;
+    color: #000;
+    padding: 0;
+    margin-top: 3px;
+}
+.Wserch .WserchBtn{
+    float: right;
+    height: 60px;
+    width: 80px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 58px;
+    font-family: "Microsoft YaHei";
+    font-size: 30px;
+    margin: 12px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Wserch .errts{
+	position: absolute;
+    top: 95px;
+    font-size: 25px;
+    padding-left: 45px;
+    background: url(../images/ts.png) no-repeat left center;
+}
+.list{
+	width: 92%;
+	height: auto;
+	margin:25px auto 0;
+}
+.list .li{
+	width: 94%;
+	min-height:260px;
+	border:1px solid #666;
+	border-radius: 4px;
+	padding:20px 3%;
+	margin-bottom: 30px;
+}
+.li .onDate{
+	font-family: "Microsoft YaHei";
+	font-size: 35px;
+	height: 60px;
+	border-bottom:1px solid #666;
+}
+.li .libox{
+	height: auto;
+}
+.li .liboxLeft,
+.li .liboxRight{
+	float: left;
+	width: 320px;
+	height: 260px;
+	font-family: "Microsoft YaHei";
+	font-size: 30px;
+	border-bottom:1px solid #666;
+}
+.liboxLeft{
+	border-right:1px solid #666;
+}
+.liboxLeft p{
+	margin:6px 0;
+}
+.liboxRight .type{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	font-size: 60px;
+	text-align: center;
+}
+.liboxRight .wd{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 16px;
+}
+.liboxRight .Rnotice{
+	position: relative;
+	width: 300px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 20px;
+	overflow: hidden;
+	/*overflow-x:auto;
+*/	white-space:nowrap;
+	text-align: center;
+}
+.liboxRight .Rnotice p{
+	position: absolute;
+}
+.liboxRight .Rnotice p span:first-child{
+	margin-right: 30px
+}
+.aqi{
+	margin-top:20px;
+	height: 60px;
+}
+.aqi p{
+	float: left;
+	width: 33%;
+	height: 50px;
+	font-size: 35px;
+}
+.wxts{
+	font-size: 30px;
+}
+.msg{
+	width: 94%;
+	height:260px;
+	line-height: 260px;
+	border-radius: 4px;
+	padding:20px 0;
+	margin:0 auto;
+	font-size:30px;
+	text-align: center;
+	background: url(../images/jt.png) no-repeat 580px top;
+	background-size: 100px 160px;
+}
+.loading{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #fff url(../images/loading.gif) no-repeat center;
+}
