@@ -1,8 +1,8 @@
-## 前提
+// 前提
 
-> 在 vue开发中，难免遇到各种表单校验，这里整理了网络上和自己平时高频率用到的一些校验方法。如果错误欢迎指出，后期不断补充更新。
+// 在 vue开发中，难免遇到各种表单校验，这里整理了网络上和自己平时高频率用到的一些校验方法。如果错误欢迎指出，后期不断补充更新。
 
-### 1、是否合法IP地址
+// 1、是否合法IP地址
 
 ```
 export function validateIP(rule, value,callback) {
@@ -19,7 +19,7 @@ export function validateIP(rule, value,callback) {
 }
 ```
 
-### 2、是否手机号码或者固话
+// 2、是否手机号码或者固话
 
 ```
 export function validatePhoneTwo(rule, value, callback) {
@@ -36,7 +36,7 @@ export function validatePhoneTwo(rule, value, callback) {
 }
 ```
 
-### 3、是否固话
+// 3、是否固话
 
 ```
 export function validateTelphone(rule, value,callback) {
@@ -53,7 +53,7 @@ export function validateTelphone(rule, value,callback) {
 }
 ```
 
-### 4、是否手机号码
+// 4、是否手机号码
 
 ```
 export function validatePhone(rule, value,callback) {
@@ -70,7 +70,7 @@ export function validatePhone(rule, value,callback) {
 }
 ```
 
-### 5、是否身份证号码
+// 5、是否身份证号码
 
 ```
 export function validateIdNo(rule, value,callback) {
@@ -87,7 +87,7 @@ export function validateIdNo(rule, value,callback) {
 }
 ```
 
-### 6、是否邮箱
+// 6、是否邮箱
 
 ```
 export function validateEMail(rule, value,callback) {
@@ -104,7 +104,7 @@ export function validateEMail(rule, value,callback) {
 }
 ```
 
-### 7、合法url
+// 7、合法url
 
 ```
 export function validateURL(url) {
@@ -114,7 +114,7 @@ export function validateURL(url) {
 ```
 
 
-### 8、验证内容是否包含英文数字以及下划线
+// 8、验证内容是否包含英文数字以及下划线
 
 ```
 export function isPassword(rule, value, callback) {
@@ -131,7 +131,7 @@ export function isPassword(rule, value, callback) {
 }
 ```
 
-### 9、自动检验数值的范围
+// 9、自动检验数值的范围
 
 ```
 export function checkMax20000(rule, value, callback) {
@@ -148,7 +148,7 @@ export function checkMax20000(rule, value, callback) {
 ```
 
 
-### 10、验证数字输入框最大数值
+// 10、验证数字输入框最大数值
 
 ```
 export function checkMaxVal(rule, value,callback) {
@@ -160,7 +160,7 @@ export function checkMaxVal(rule, value,callback) {
 }
 ```
 
-### 11、验证是否1-99之间
+// 11、验证是否1-99之间
 
 ```
 export function isOneToNinetyNine(rule, value, callback) {
@@ -184,7 +184,7 @@ export function isOneToNinetyNine(rule, value, callback) {
 ```
 
 
-### 12、验证是否整数
+// 12、验证是否整数
 
 ```
 export function isInteger(rule, value, callback) {
@@ -207,7 +207,7 @@ export function isInteger(rule, value, callback) {
 }
 ```
 
-### 13、验证是否整数,非必填
+// 13、验证是否整数,非必填
 
 ```
 export function isIntegerNotMust(rule, value, callback) {
@@ -231,7 +231,7 @@ export function isIntegerNotMust(rule, value, callback) {
 ```
 
 
-### 14、 验证是否是[0-1]的小数
+// 14、 验证是否是[0-1]的小数
 
 ```
 export function isDecimal(rule, value, callback) {
@@ -253,7 +253,7 @@ export function isDecimal(rule, value, callback) {
 ```
 
 
-### 15、 验证是否是[1-10]的小数,即不可以等于0
+// 15、 验证是否是[1-10]的小数,即不可以等于0
 
 ```
 export function isBtnOneToTen(rule, value, callback) {
@@ -274,7 +274,7 @@ export function isBtnOneToTen(rule, value, callback) {
 }
 ```
 
-### 16、验证是否是[1-100]的小数,即不可以等于0
+// 16、验证是否是[1-100]的小数,即不可以等于0
 
 ```
 export function isBtnOneToHundred(rule, value, callback) {
@@ -295,7 +295,7 @@ export function isBtnOneToHundred(rule, value, callback) {
 }
 ```
 
-### 17、验证是否是[0-100]的小数
+// 17、验证是否是[0-100]的小数
 
 ```
 export function isBtnZeroToHundred(rule, value, callback) {
@@ -317,7 +317,7 @@ export function isBtnZeroToHundred(rule, value, callback) {
 ```
 
 
-### 18、验证端口是否在[0,65535]之间
+// 18、验证端口是否在[0,65535]之间
 
 ```
 export function isPort(rule, value, callback) {
@@ -340,7 +340,7 @@ export function isPort(rule, value, callback) {
 }
 ```
 
-### 19、验证端口是否在[0,65535]之间，非必填,isMust表示是否必填
+// 19、验证端口是否在[0,65535]之间，非必填,isMust表示是否必填
 
 ```
 export function isCheckPort(rule, value, callback) {
@@ -364,7 +364,7 @@ export function isCheckPort(rule, value, callback) {
 ```
 
 
-### 20、小写字母
+// 20、小写字母
 
 ```
 export function validateLowerCase(val) {
@@ -373,7 +373,7 @@ export function validateLowerCase(val) {
 }
 ```
 
-### 22、两位小数验证
+// 22、两位小数验证
 
 ```
 const validateValidity = (rule, value, callback) => {
@@ -385,7 +385,7 @@ const validateValidity = (rule, value, callback) => {
 };
 ```
 
-### 23、是否大写字母
+// 23、是否大写字母
 
 ```
 export function validateUpperCase(val) {
@@ -394,7 +394,7 @@ export function validateUpperCase(val) {
 }
 ```
 
-### 24、是否大小写字母
+// 24、是否大小写字母
 
 ```
 export function validatAlphabets(val) {
@@ -404,7 +404,7 @@ export function validatAlphabets(val) {
 ```
 
 
-### 25、密码校验
+// 25、密码校验
 
 ```
 export const validatePsdReg = (rule, value, callback) => {
@@ -420,7 +420,7 @@ export const validatePsdReg = (rule, value, callback) => {
 ```
 
 
-### 26、中文校验
+// 26、中文校验
 
 ```
 export const validateContacts = (rule, value, callback) => {
@@ -435,23 +435,9 @@ export const validateContacts = (rule, value, callback) => {
 }
 ```
 
-### 27、身份证校验
 
 
-```
-export const ID = (rule, value, callback) => {
-    if (!value) {
-      return callback(new Error('身份证不能为空'))
-    }
-    if (! /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/.test(value)) {
-      callback(new Error('请输入正确的二代身份证号码'))
-    } else {
-      callback()
-    }
-}
-```
-
-### 28、 账号校验
+// 27、 账号校验
 
 ```
 export const validateCode = (rule, value, callback) => {
@@ -465,7 +451,7 @@ export const validateCode = (rule, value, callback) => {
   }
 }
 ```
-### 29 、纯数字校验
+// 28 、纯数字校验
 
 ```
 export const validateNumber = (rule, value, callback) => {
@@ -480,7 +466,7 @@ export const validateNumber = (rule, value, callback) => {
     }
 }
 ```
-### 30、最多一位小数
+//  29、最多一位小数
 
 ```
 const onePoint = (rule, value, callback) => {
@@ -493,4 +479,4 @@ const onePoint = (rule, value, callback) => {
 ```
 
 
-## 公众号【小夭同学】
+// 公众号【小夭同学】
