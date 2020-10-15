@@ -11,4 +11,4 @@
 - 前端常用的CSS代码块.md
 
 
-![qrcode.gif](http://blogimg.lieme.cn/FgqITK3wCPnN80JPdYMspOfe0pUd)
+![gg.gif](https://blogimg.lieme.cn/FsaWonzTLc3IJVZgYDrjHdVEj3HR)
