@@ -255,5 +255,9 @@ const reg =^(\-)?\d+(\.\d{1,2})?$
 console.log(reg.test(11.11))
 ```
 
-### 27. 待补充
+### 27. 带+、-的整数
 
+```
+const reg = /^[+-]?[0-9]+$/
+console.log(reg.test(-11.11))
+```
